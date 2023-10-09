@@ -21,7 +21,7 @@ function guest_only(req, res, next) {
 
 /* GET home page. */
 router.get('/', guest_only, function(req, res, next) {
-  res.render('front_door', {title: 'ztncui'});
+  res.render('front_door', {title: 'Thislab network'});
 });
 
 router.get('/logout', function(req, res) {
