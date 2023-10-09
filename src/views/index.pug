@@ -9,14 +9,17 @@ block content
   h1!= title
 
   h2
-    a(href='https://zerotier.com' target='_blank') ZeroTier 
-    | network controller UI by 
-    a(href='https://key-networks.com' target='_blank') Key Networks
+    a(href='https://thislab.net' target='_blank') Thislab
+    | network controller
+    a(href='https://thislab.net' target='_blank') Thislab Networks
 
   if error
      b #{error}
   else
-    h4 This network controller has a ZeroTier address of <b>#{zt_status.address}</b>
-    h4 ZeroTier version <b>#{zt_status.version}</b>
+    h4 This network controller has a address of <b>#{zt_status.address}</b>
+    h4 zt version <b>#{zt_status.version}</b>
     h4
       a(href='/controller/networks') List all networks on this network controller
+
+  p
+    a(href='http://beian.miit.gov.cn' target='_blank') 皖ICP备15018911号-9
